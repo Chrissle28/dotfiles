@@ -1,0 +1,55 @@
+## IDK lets keep them for now
+# Aliases
+# alias ..='cd ..'
+# alias ...='cd ../..'
+# alias ....='cd ../../..'
+# alias grep='grep --color=auto'
+# alias less='less -R'
+
+
+# Composer Alias
+alias composer="COMPOSER_MEMORY_LIMIT=-1 composer"
+alias cda="composer dumpautoload"
+alias ccc="composer clear-cache"
+alias gcomposer="code ~/.composer"
+
+# ZSH Shortcuts
+alias zshconfig="code ~/.zshrc"
+alias reload="source ~/.zshrc"
+
+
+## Laravel
+alias pa="php artisan"
+alias paca="pa cache:clear && pa route:clear && pa config:clear && pa view:clear"
+
+## docker
+alias dc="docker-compose"
+alias doker-composer="docker-compose"
+
+
+## Git
+alias wip="git add . && git commit -m \"wip\" && git push"
+alias nah="git reset --hard && git clean -df"
+
+## Symfony
+alias symfony="bin/console"
+alias bc="bin/console"
+
+## NPM
+alias nrw="npm run watch"
+alias nrp="npm run prod"
+alias nrd="npm run dev"
+
+## PHPunit
+alias phpunit="vendor/bin/phpunit"
+alias pu="vendor/bin/phpunit"
+alias pf="clear && phpunit --filter"
+alias puf="clear && phpunit --filter"
+
+#misc
+alias cpenv="cp .env.example .env"
+alias grep="grep -n --color" 
+alias del="rm -rf"
+alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
+
+

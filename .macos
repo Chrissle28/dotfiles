@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+
+# Thanks to Mathias Bynens!
+# ~/.macos — https://mths.be/macos
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+
+# Default new documents in TextEdit to txt
+defaults write com.apple.TextEdit "RichText" -bool "false" && killall TextEdit
+
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Show the ~/Users folder
+chflags nohidden /Users
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Set Desktop as the default location for new Finder windows
+# For other paths, use `PfLo` and `file:///full/path/here/`
+defaults write com.apple.finder NewWindowTarget -string "PfDe"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+
+
+
+# Set the timezone; see `systemsetup -listtimezones` for other values
+systemsetup -settimezone "Europe/Berlin" > /dev/null
+
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+
+###############################################################################
+# Screenshots                                                                 #
+###############################################################################
+
+# Change default screenshot directory
+mkdir -p $HOME/Pictures/Screenshots
+defaults write com.apple.screencapture location $HOME/Pictures/Screenshots
+
+
+# Set default screenshot location
+#defaults write com.apple.screencapture "location" -string "~/Documents/Screenshots"
+
+# Exclude date and time in screenshot filenames
+defaults write com.apple.screencapture "include-date" -bool false
+
+# Change the default screenshot file name
+defaults write com.apple.screencapture "name" -string "screenshot"
+
+
+###############################################################################
+# Safari & WebKit                                                             #
+###############################################################################
+
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+
+###############################################################################
+# Dock                                                                        #
+###############################################################################
+dockutil --no-restart --remove all
+dockutil --no-restart --add "/Applications/Google Chrome.app"
+dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+dockutil --no-restart --add "/Applications/Slack.app"
+
+
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
+
+for app in "Dock" "Finder" "Mail" "Safari" "SystemUIServer" \
+	"Terminal"; do
+	killall "${app}" > /dev/null 2>&1
+done
+echo "Done. Note that some of these changes require a logout/restart to take effect."

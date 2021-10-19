@@ -1,0 +1,12 @@
+function aliases() {
+    if [[ $# == 0 ]]; then
+        alias
+    fi
+    if [[ $1 == "edit" ]]; then
+        code ~/.dotfiles/shell/.aliases
+    fi
+}
+
+function silent() {
+   "$@" >& /dev/null
+}
