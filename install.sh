@@ -41,6 +41,7 @@ brew bundle
 
 
 # # Set default MySQL root password and auth type
+brew services start mysql # make sure mysql is running
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'root'; FLUSH PRIVILEGES;"
 
 # # install default composer packages
