@@ -36,6 +36,7 @@ cask 'visual-studio-code'
 cask 'insomnia'
 cask 'phpmon'
 cask 'sequel-ace'
+cask 'tableplus'
 
 
 ##
