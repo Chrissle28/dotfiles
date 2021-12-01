@@ -38,7 +38,7 @@ plugins=(
     git
     brew
     npm
-    osx
+    macos
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
