@@ -64,8 +64,7 @@ export PATH=/usr/local/bin:$PATH
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-# Load the shell dotfiles, and then some:
-# * ~/.dotfiles-custom can be used for other settings you don’t want to commit.
+# Load the shell dotfiles:
 for file in ~/.dotfiles/shell/.{exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
