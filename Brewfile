@@ -40,6 +40,7 @@ cask 'sequel-ace'
 cask 'tableplus'
 cask 'logseq'
 cask 'warp'
+cask 'raycast'
 
 
 ##
