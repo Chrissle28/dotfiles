@@ -19,6 +19,7 @@ brew 'dockutil'
 ##
 brew 'git'
 brew 'php'
+brew 'php@8.0'
 brew 'php@7.4'
 brew 'composer'
 brew 'mysql'
@@ -37,6 +38,8 @@ cask 'insomnia'
 cask 'phpmon'
 cask 'sequel-ace'
 cask 'tableplus'
+cask 'logseq'
+cask 'warp'
 
 
 ##
@@ -47,3 +50,4 @@ cask 'google-chrome'
 cask 'slack'
 cask 'tiles'
 cask 'keka'
+cask 'spotify'
