@@ -1,9 +1,12 @@
-function aliases() {
-    if [[ $# == 0 ]]; then
-        alias
+function config () {
+    if [[ $1 == "functions" ]]; then
+        code ~/.dotfiles/shell/.functions
     fi
-    if [[ $1 == "edit" ]]; then
+    if [[ $1 == "aliases" ]]; then
         code ~/.dotfiles/shell/.aliases
+    fi
+    if [[ $1 == "zsh" ]]; then
+        code ~/.zshrc
     fi
 }
 
