@@ -25,11 +25,9 @@ brew 'composer'
 brew 'mysql'
 brew 'nginx'
 
-brew 'node@14'
+brew 'node@16'
 brew 'npm'
 brew 'nvm'
-
-brew 'neovim'
 
 cask 'docker'
 cask 'iterm2'
@@ -38,7 +36,6 @@ cask 'postman'
 cask 'phpmon'
 cask 'sequel-ace'
 cask 'logseq'
-cask 'warp'
 cask 'raycast'
 
 
