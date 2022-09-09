@@ -63,18 +63,3 @@ for file in ~/.dotfiles/shell/.{exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
-
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-alias ga="git add ."
-alias gc="git commit -m"
-alias gcb="git checkout -b"
-alias gch="git checkout"
-alias gp="git push"
-alias pa="php artisan"
-alias reload="source ~/.zshrc"
-alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
-alias kill8080="sudo lsof -t -i tcp:8080 | xargs kill"
-alias setup:seed="php artisan migrate:fresh --seed; php artisan cache:clear"
-# Composer Alias
-alias composer="COMPOSER_MEMORY_LIMIT=-1 composer"[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -8,36 +8,23 @@ alias gcomposer="code ~/.composer"
 alias zshconfig="code ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias dotfiles="code ~/.dotfiles"
-
+alias ohmyzsh="code ~/.oh-my-zsh"
 
 ## Laravel
 alias pa="php artisan"
 alias paca="pa cache:clear && pa route:clear && pa config:clear && pa view:clear"
-alias mfs="php artisan migrate:fresh --seed"
-
-## docker
-alias dc="docker-compose"
-alias doker-composer="docker-compose"
-
+alias setup:seed="php artisan migrate:fresh --seed; php artisan cache:clear"
 
 ## Git
-alias wip="git add . && git commit -m \"wip\" && git push"
-alias nah="git reset --hard && git clean -df"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gcb="git checkout -b"
+alias gch="git checkout"
+alias gp="git push"
 
 ## Symfony
 alias symfony="bin/console"
 alias bc="bin/console"
-
-## NPM
-alias nrw="npm run watch"
-alias nrp="npm run prod"
-alias nrd="npm run dev"
-
-## PHPunit
-alias phpunit="vendor/bin/phpunit"
-alias pu="vendor/bin/phpunit"
-alias pf="clear && phpunit --filter"
-alias puf="clear && phpunit --filter"
 
 #misc
 alias cpenv="cp .env.example .env"

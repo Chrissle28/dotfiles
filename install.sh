@@ -58,8 +58,8 @@ mkdir $HOME/Sites
 # # configure git
 [ ! -f ~/.global.gitignore ] && ln -s ~/.dotfiles/.global.gitignore ~/.global.gitignore
 git config --global core.excludesfile ~/.global.gitignore
-git config --global user.name "Lukas Heller"
-git config --global user.email "36259611+lpheller@users.noreply.github.com"
+git config --global user.name "Christian Zellier"
+git config --global user.email "36259611+Chrissle28@users.noreply.github.com"
 git config --global credential.helper osxkeychain
 
 # # Set macOS preferences - we will run this last because this will reload the shell
