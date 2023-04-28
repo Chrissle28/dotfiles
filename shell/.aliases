@@ -1,33 +1,39 @@
 # Composer Alias
+
 alias composer="COMPOSER_MEMORY_LIMIT=-1 composer"
 alias cda="composer dumpautoload"
-alias ccc="composer clear-cache"
+alias ccc="composer clear-cache" 
 alias gcomposer="code ~/.composer"
 
 # ZSH Shortcuts
-alias zshconfig="code ~/.zshrc"
-alias reload="source ~/.zshrc"
+
+alias zshconfig="code ~/.zshrc" 
+alias reload="source ~/.zshrc" 
 alias dotfiles="code ~/.dotfiles"
 alias ohmyzsh="code ~/.oh-my-zsh"
 
 ## Laravel
-alias pa="php artisan"
-alias paca="pa cache:clear && pa route:clear && pa config:clear && pa view:clear"
+
+alias pa="php artisan" 
+alias paca="pa cache:clear && pa route:clear && pa config:clear && pa view:clear" 
 alias setup:seed="php artisan migrate:fresh --seed; php artisan cache:clear"
 
 ## Git
-alias ga="git add ."
-alias gc="git commit -m"
-alias gcb="git checkout -b"
-alias gch="git checkout"
-alias gp="git push"
+
+alias ga="git add ." 
+alias gc="git commit -m" 
+alias gcb="git checkout -b" 
+alias gch="git checkout" 
+alias gp="git push" 
+alias greset="git reset --soft HEAD~1"
 
 ## Symfony
-alias symfony="bin/console"
+
+alias symfony="bin/console" 
 alias bc="bin/console"
 
-#misc
-alias cpenv="cp .env.example .env"
-alias grep="grep -n --color"
-alias del="rm -rf"
+#misc 
+alias cpenv="cp .env.example .env" 
+alias grep="grep -n --color" 
+alias del="rm -rf" 
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"

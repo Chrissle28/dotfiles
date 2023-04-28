@@ -33,7 +33,6 @@ plugins=(
     npm
     macos
     zsh-autosuggestions
-    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -44,8 +43,8 @@ export LANG=en_US.UTF-8
 
 
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 
 # If you come from bash you might have to change your $PATH.
@@ -53,6 +52,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=$HOME/.symfony/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=${PATH}:/usr/local/mysql/bin/
 
 export PATH=$HOME/.npm-packages/bin:$PATH
 export PATH=$HOME/.npm-global/bin:$PATH
