@@ -63,3 +63,10 @@ for file in ~/.dotfiles/shell/.{exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
+
+# bun completions
+[ -s "/Users/christian_aw/.bun/_bun" ] && source "/Users/christian_aw/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
