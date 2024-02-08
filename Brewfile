@@ -45,6 +45,7 @@ cask 'herd'
 cask 'sequel-ace'
 cask 'logseq'
 cask 'raycast'
+cask 'tinkerwell'
 
 
 ##
