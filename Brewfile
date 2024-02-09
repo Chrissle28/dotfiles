@@ -34,6 +34,7 @@ brew 'npm'
 brew 'bun'
 brew 'nvm'
 brew 'neovim'
+brew 'tmux'
 
 cask 'docker'
 cask 'iterm2'
