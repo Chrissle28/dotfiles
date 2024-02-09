@@ -22,6 +22,18 @@ echo -e "\nSymlinking zsh files"
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+echo -e "\nSymlinking tmux files"
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.tmux.conf
+ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
+rm -rf $HOME/.tmux
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+
+rm -rf $HOME/.config/nvim
+git clone https://github.com/Chrissle28/nvim.git $HOME/.config/nvim
+
+
+
 #--------------------------------------------------
 # macOS Apps and services
 #--------------------------------------------------
