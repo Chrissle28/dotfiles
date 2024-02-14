@@ -35,6 +35,7 @@ brew 'bun'
 brew 'nvm'
 brew 'neovim'
 brew 'tmux'
+brew 'ripgrep'
 
 cask 'docker'
 cask 'iterm2'
