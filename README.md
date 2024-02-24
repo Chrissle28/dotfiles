@@ -1,6 +1,7 @@
 # Dotfiles
 
 1. Install xcode devloper tools (git) and homebrew:
+
 ```sh
 xcode-select --install
 ```
@@ -10,8 +11,9 @@ xcode-select --install
 ```
 
 2. Clone dotfiles and run install
+
 ```sh
-git clone https://github.com/lpheller/dotfiles.git ~/.dotfiles
+git clone https://github.com/Chrissle28/dotfiles.git ~/.dotfiles
 ```
 
 ```sh
