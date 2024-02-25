@@ -44,7 +44,6 @@ cask 'postman'
 cask 'herd'
 cask 'sequel-ace'
 cask 'raycast'
-cask 'tinkerwell'
 
 ##
 # Apps
