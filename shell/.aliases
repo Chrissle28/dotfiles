@@ -3,14 +3,14 @@
 alias composer="COMPOSER_MEMORY_LIMIT=-1 composer"
 alias cda="composer dumpautoload"
 alias ccc="composer clear-cache" 
-alias gcomposer="code ~/.composer"
+alias gcomposer="nvim ~/.composer"
 
 # ZSH Shortcuts
 
-alias zshconfig="code ~/.zshrc" 
+alias zshconfig="nvim ~/.zshrc" 
 alias reload="source ~/.zshrc" 
-alias dotfiles="code ~/.dotfiles"
-alias ohmyzsh="code ~/.oh-my-zsh"
+alias dotfiles="nvim ~/.dotfiles"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 ## Laravel
 
@@ -41,7 +41,6 @@ alias bc="bin/console"
 alias cpenv="cp .env.example .env" 
 alias grep="grep -n --color" 
 alias del="rm -rf" 
-alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias sshkeynew="cat ~/.ssh/id_ed25519.pub | pbcopy"
 alias nvdir="cd ~/.config/nvim"

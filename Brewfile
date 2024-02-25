@@ -14,7 +14,6 @@ brew 'gh'
 brew 'pkg-config'
 brew 'dockutil'
 
-
 ##
 # Development
 ##
@@ -22,7 +21,6 @@ brew 'git'
 brew 'php'
 brew 'php@8.2'
 brew 'php@8.1'
-brew 'php@8.0'
 brew 'composer'
 brew 'mysql'
 brew 'nginx'
@@ -39,16 +37,14 @@ brew 'ripgrep'
 
 cask 'docker'
 cask 'iterm2'
+cask 'warp'
 cask 'visual-studio-code'
 cask 'vscodium'
 cask 'postman'
-cask 'phpmon'
 cask 'herd'
 cask 'sequel-ace'
-cask 'logseq'
 cask 'raycast'
 cask 'tinkerwell'
-
 
 ##
 # Apps
