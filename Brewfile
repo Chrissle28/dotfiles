@@ -24,6 +24,7 @@ brew 'php@8.1'
 brew 'composer'
 brew 'mysql'
 brew 'nginx'
+brew 'go'
 
 brew 'node@20'
 brew 'node@18'
