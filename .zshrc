@@ -58,6 +58,8 @@ export PATH=${PATH}:/usr/local/mysql/bin/
 export PATH=$HOME/.npm-packages/bin:$PATH
 export PATH=$HOME/.npm-global/bin:$PATH
 
+export PATH=$PATH:/Users/christian/go/bin
+
 
 # Load the shell dotfiles:
 for file in ~/.dotfiles/shell/.{exports,aliases,functions,extra}; do
