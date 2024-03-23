@@ -38,7 +38,7 @@ alias symfony="bin/console"
 alias bc="bin/console"
 
 ## Go
-alias air='~/.air'
+alias air='~/go/bin/air'
 
 #misc 
 alias cpenv="cp .env.example .env" 

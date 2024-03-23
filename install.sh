@@ -44,6 +44,9 @@ brew bundle
 # # install php extensions
 # pecl install xdebug
 
+# # install go modules
+go install github.com/cosmtrek/air@latest
+go install github.com/a-h/templ/cmd/templ@latest
 
 # # Set default MySQL root password and auth type
 brew services start mysql # make sure mysql is running
