@@ -37,6 +37,9 @@ alias stexport="npm run strapi export -- --file"
 alias symfony="bin/console" 
 alias bc="bin/console"
 
+## Go
+alias air='~/.air'
+
 #misc 
 alias cpenv="cp .env.example .env" 
 alias grep="grep -n --color" 
