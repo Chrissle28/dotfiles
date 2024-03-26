@@ -22,8 +22,11 @@ echo -e "\nSymlinking zsh files"
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+echo -e "\nSymlinking wezterm config"
+rm -rf $HOME/.wezterm.lua
+ln -s $HOME/.dotfiles/.wezterm.lua $HOME/.wezterm.lua
+
 echo -e "\nSymlinking tmux files"
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 rm -rf $HOME/.tmux
