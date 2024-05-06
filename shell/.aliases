@@ -18,6 +18,11 @@ alias pa="php artisan"
 alias paca="pa cache:clear && pa route:clear && pa config:clear && pa view:clear" 
 alias setup:seed="php artisan migrate:fresh --seed; php artisan cache:clear"
 
+## Pest
+
+alias pest="vendor/bin/pest"
+alias pef="vendor/bin/pest --filter="
+
 ## Git
 
 alias ga="git add ." 
